@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Body */
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.airbag.la/images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+
+
+.logo {
+        width: 120px;
+    padding: 20px;
+}
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 40px;    
+}
+
+
+.inicioSesion {
+    text-decoration: underline;
+    font-size: 15px;
+    display: flex;
+    justify-content: end;
+    top: 5px;
+    right: 20px;
+    transition: color 0.5s; 
+}
+
+.inicioSesion:hover {
+    color: aqua;
+}
+
+
+/* Enlaces */
+
+
+ul {
+    list-style-type: none;
+}
+
+li,
+a {
+    color: aliceblue!important;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.botonHambur {
+    height: 50px;
+}
+
+nav a {
+    color: aliceblue; 
+    transition: color 0.5s; 
+}
+
+nav a:hover {
+    color: crimson; 
+}
+
+
+
+/* Main */
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+main {
+    margin: 50px;
+    padding: 50px;
+}
+
+.containerInicio {
+    display: grid;
+}
+
+.titulosPlaylist h1 {
+    margin-top: 150px;
+}
+
+.titulosPlaylist h2 {
+    margin-top: 80px;
+}
+
+
+.playlist {
+    width: 100%;
+}
+
+.playlistUno {
+    margin-bottom: 3rem;
+}
+
+
+/* Footer */
+
+footer {
+    margin: 20px;
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.iconoFooter {
+    height: 30px;
+    margin: 0 50px 20px;
+}
+
+
+.face {
+    height: 40px;
+}
+
+.whats {
+    position: fixed;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+
+/* MEDIA */
+
+
+.linkRegistro {
+    text-decoration: underline;
+    color: aqua;
+    transition: color 0.3s;
+}
+
+.linkRegistro:hover {
+    color: crimson;
+}
+
+.fotosEspectaculos {
+    height: 65px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.artistasEspectaculos {
+    display: grid;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+.video {
+    display: flex;
+}
+
+.videoAchicado {
+    flex: 1;
+    margin: 10px;
+    height: 240px;
+    width: 450px;
+}
+
+
+.videoGrande {
+    text-align: center;
+    margin: 10px;
+    height: 500px;
+    width: 815px;
+}
+
+
+/* iFrames */
+
+.mapa {
+    display: block;
+    margin: auto;
+    padding: 50px;
+}
+
+
+/* Formulario */
+
+form {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contacto {
+    text-align: center;
+    text-decoration: underline;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.botonFormulario {
+    width: 15%;
+    cursor: pointer;
+}
+
+/********** Media Queries **********/
+
+@media (min-width: 990px) {
+    .containerInicio {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 989px) {
+    .titulosPlaylist h1 {
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .titulosPlaylist h1 {
+        margin-top: 0;
+    }
+
+    .mapa {
+        height: 450px;
+    }
+
+    main {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .iconoFooter {
+        height: 30px;
+        margin: 0 25px 15px;
+    }
+}
