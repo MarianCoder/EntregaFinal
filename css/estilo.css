@@ -10,7 +10,10 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://www.airbag.la/images/banner.jpg");
     background-size: cover;
-    color: aliceblue;    
+    background-position: center;
+    color: aliceblue;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -19,10 +22,9 @@ body {
 header {
     text-align: center;
     padding: 10px 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(); /*Sin link para que use la del body*/
-    border-bottom: 1px solid aliceblue;
 }
+
+
 
 .logo {
         width: 120px;
@@ -61,11 +63,15 @@ ul {
 
 li,
 a {
-    color: aliceblue;
+    color: aliceblue!important;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
     font-size: 25px;
+}
+
+.botonHambur {
+    height: 50px;
 }
 
 nav a {
@@ -93,7 +99,6 @@ main {
 
 .containerInicio {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .titulosPlaylist h1 {
@@ -234,25 +239,39 @@ textarea {
     cursor: pointer;
 }
 
+/********** Media Queries **********/
 
-
-/********** MediaQueries **********/
-
-/* Vista tablet 768px - 1023px */
-
-@media (max-width: 1023px) {
-    /* Header */
-
-    header {
-        height: auto;
-        flex-direction: column;
-        text-align: center;
+@media (min-width: 990px) {
+    .containerInicio {
+        grid-template-columns: 1fr 1fr;
     }
 
-    /* Banner */
-
-    body {
-        background-position: center; 
-    }
 }
 
+@media (max-width: 989px) {
+    .titulosPlaylist h1 {
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .titulosPlaylist h1 {
+        margin-top: 0;
+    }
+
+    .mapa {
+        height: 450px;
+    }
+
+    main {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .iconoFooter {
+        height: 30px;
+        margin: 0 25px 15px;
+    }
+}
