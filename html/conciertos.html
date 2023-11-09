@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Visitá la programación de los artistas my sus tour que estan por venir. Reservá tu lugar pronto!">
+    <meta name="description"
+        content="Visitá la programación de los artistas my sus tour que estan por venir. Reservá tu lugar pronto!">
     <title>Concert Now | Conciertos</title>
     <!-- BS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
-        <!-- FavIcon -->
-        <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- FavIcon -->
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="container-fluid">
@@ -55,81 +56,66 @@
 
         <h2> Tendencias </h2>
 
-        <div>
-            <img class="imagenTendencia" src="" alt="Foto concierto">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates perferendis voluptas in
-                explicabo enim temporibus eum sit incidunt doloribus?</p>
-        </div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/Fotos conciertos/Foto slide Maria becerra.png" class="d-block w-100" alt="Foto slide de Maria Becerra">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/Fotos conciertos/Foto slide Taylor.png" class="d-block w-100" alt="Foto slide de Taylor Swift">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/Fotos conciertos/Foto slide Red Hot.png" class="d-block w-100" alt="Foto slide de los Red Hot">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
-        <div>
-            <img class="imagenTendencia" src="" alt="Foto concierto">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates perferendis voluptas in
-                explicabo enim temporibus eum sit incidunt doloribus?</p>
-        </div>
 
-        <div>
-            <img class="imagenTendencia" src="" alt="Foto concierto">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates perferendis voluptas in
-                explicabo enim temporibus eum sit incidunt doloribus?</p>
-        </div>
-
-        <div>
-            <img class="imagenTendencia" src="" alt="Foto concierto">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates perferendis voluptas in
-                explicabo enim temporibus eum sit incidunt doloribus?</p>
-        </div>
-
+          <br><br>
         <h2> Conciertos en Buenos Aires </h2>
 
-        <div>
-            <img class="imagenConciertoBsas" src="" alt="Foto concierto">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates perferendis voluptas in
-                explicabo enim temporibus eum sit incidunt doloribus?</p>
+
+        <div class="row">
+
+            <div class="card mb-5 col-xl-4 col-sm-12">
+                <img class="img-fluid fotosConciertos" src="/img/Fotos conciertos/Maria becerra Concierto.jpg" class="card-img-top" alt="Foto de Maria Becerra">
+                <div class="card-body">
+                    <h3 class="card-title">Maria Becerra</h3>
+                    <p class="card-text">Una de las artistas con mas relevancia de los ultimos tiempos se presenta en
+                        nuestro pais!</p>
+                    <a href="calendario.html" class="btn btn-primary">Enterate cuándo</a>
+                </div>
+            </div>
+
+            <div class="card mb-5 col-xl-4 col-sm-12">
+                <img class="img-fluid fotosConciertos" src="/img/Fotos conciertos/Taylor Concierto.jpg" class="card-img-top" alt="Foto de Taylor">
+                <div class="card-body">
+                    <h3 class="card-title">Taylor Swift</h3>
+                    <p class="card-text">Una de las artistas mas reconocidas mundialmente se presenta en River</p>
+                    <a href="calendario.html" class="btn btn-primary">Enterate cuándo</a>
+                </div>
+            </div>
+
+            <div class="card mb-5 col-xl-4 col-sm-12">
+                <img class="img-fluid fotosConciertos" src="/img/Fotos conciertos/Red Hot Concierto.png" class="card-img-top" alt="Foto de los Red Hot">
+                <div class="card-body">
+                    <h3 class="card-title">Red Hot Chili Peppers</h3>
+                    <p class="card-text">La legendaria banda de rock estadounidense va a estar en el estadio Más Monumental</p>
+                    <a href="calendario.html" class="btn btn-primary">Enterate cuándo</a>
+                </div>
+            </div>
+
+
         </div>
 
-        <div>
-            <img class="imagenConciertoBsas" src="" alt="Foto concierto">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates perferendis voluptas in
-                explicabo enim temporibus eum sit incidunt doloribus?</p>
-        </div>
-
-        <div>
-            <img class="imagenConciertoBsas" src="" alt="Foto concierto">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates perferendis voluptas in
-                explicabo enim temporibus eum sit incidunt doloribus?</p>
-        </div>
-
-        <div>
-            <img class="imagenConciertoBsas" src="" alt="Foto concierto">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates perferendis voluptas in
-                explicabo enim temporibus eum sit incidunt doloribus?</p>
-        </div>
-
-        <h2> Próximo Mes</h2>
-
-        <div>
-            <img class="imagenProximoMes" src="" alt="Foto concierto">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates perferendis voluptas in
-                explicabo enim temporibus eum sit incidunt doloribus?</p>
-        </div>
-
-        <div>
-            <img class="imagenProximoMes" src="" alt="Foto concierto">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates perferendis voluptas in
-                explicabo enim temporibus eum sit incidunt doloribus?</p>
-        </div>
-
-        <div>
-            <img class="imagenProximoMes" src="" alt="Foto concierto">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates perferendis voluptas in
-                explicabo enim temporibus eum sit incidunt doloribus?</p>
-        </div>
-
-        <div>
-            <img class="imagenProximoMes" src="" alt="Foto concierto">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates perferendis voluptas in
-                explicabo enim temporibus eum sit incidunt doloribus?</p>
-        </div>
 
     </main>
 
@@ -145,7 +131,6 @@
                 src="../img/whats.png" alt="Logo de WhatsApp"></a>
         <h4> © 2023 - Todos los Derechos Reservados - Concert Now ® es una Marca Registrada </h4>
     </footer>
-
     <!-- JS BS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

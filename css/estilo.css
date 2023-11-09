@@ -46,11 +46,11 @@ nav ul li {
     justify-content: end;
     top: 5px;
     right: 20px;
-    transition: color 0.5s; 
+    transition: color 0.3s; 
 }
 
 .inicioSesion:hover {
-    color: aqua;
+    color: aqua!important;
 }
 
 
@@ -80,7 +80,7 @@ nav a {
 }
 
 nav a:hover {
-    color: crimson; 
+    color: crimson!important; 
 }
 
 
@@ -145,33 +145,32 @@ footer {
     right: 20px;
 }
 
+/* CALENDARIO */
 
+.fotosFechas {
+    height: 150px;
+}
 
 /* MEDIA */
 
 
 .linkRegistro {
     text-decoration: underline;
-    color: aqua;
+    color: aqua!important;
     transition: color 0.3s;
 }
 
 .linkRegistro:hover {
-    color: crimson;
+    color: crimson!important;
 }
 
 .fotosEspectaculos {
-    height: 65px;
-    width: 100px;
+    height: 150px;
+    width: 215px;
+    border-radius: 25px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-.artistasEspectaculos {
-    display: grid;
-    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-}
 
 .video {
     display: flex;
@@ -199,6 +198,12 @@ footer {
     display: block;
     margin: auto;
     padding: 50px;
+}
+
+.calendario {
+    display: block;
+    margin: auto;
+    
 }
 
 
@@ -240,11 +245,24 @@ textarea {
 }
 
 /********** Media Queries **********/
+@media (max-width: 1550px) {
+    .video {
+        display: block;
+    }
+    
+    .videoAchicado {
+        height: 500px;
+        width: 815px;        
+    }
+
+}
 
 @media (min-width: 990px) {
     .containerInicio {
         grid-template-columns: 1fr 1fr;
     }
+
+
 
 }
 
@@ -253,6 +271,19 @@ textarea {
         margin-top: 0;
     }
 
+    .video {
+        display: block;
+    }
+    
+    .videoAchicado {
+        height: 400px;
+        width: 565px;        
+    }
+    
+    .videoGrande {
+        height: 400px;
+        width: 565px;        
+    }
 }
 
 @media (max-width: 768px) {
@@ -265,6 +296,10 @@ textarea {
         height: 450px;
     }
 
+    .calendario {
+        height: 350px;
+    }
+
     main {
         margin: 15px;
         padding: 15px;
@@ -273,5 +308,21 @@ textarea {
     .iconoFooter {
         height: 30px;
         margin: 0 25px 15px;
+    }
+
+    .video {
+        display: block;
+    }
+    
+    .videoAchicado {
+        height: 215px;
+        width: 300px;
+
+    }
+    
+    .videoGrande {
+        height: 215px;
+        width: 300px;
+
     }
 }
