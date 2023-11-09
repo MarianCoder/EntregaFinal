@@ -1,0 +1,68 @@
+
+@mixin anclas {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+header {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 120px;
+    padding: 20px;
+    margin: 20px;
+}
+
+nav {
+    ul {
+        li {
+            list-style: none;
+            display: inline-block;
+            margin: 10px 40px;
+        }
+    }
+
+    a {
+        color: $color-blanco;
+        transition: color 0.5s;
+
+        &:hover {
+            color: $color-rojo !important;
+        }
+    }
+}
+
+.inicioSesion {
+    text-decoration: underline;
+    font-size: 15px;
+    display: flex;
+    justify-content: end;
+    top: 5px;
+    right: 20px;
+    transition: color 0.3s;
+    margin: auto;
+
+    &:hover {
+        color: $color-celeste !important;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+li,
+a {
+    @include anclas;
+    color: $color-blanco !important;
+    font-size: 25px;
+}
+
+.botonHambur {
+    height: 50px;
+}

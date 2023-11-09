@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Body */
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://www.airbag.la/images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    color: $color-blanco;
+    max-width: 100%;
+    overflow-x: hidden;
+}

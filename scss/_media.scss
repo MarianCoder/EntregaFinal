@@ -1,0 +1,34 @@
+.linkRegistro {
+    text-decoration: underline;
+    color: $color-celeste !important;
+    transition: color 0.3s;
+
+    &:hover {
+        color: $color-rojo !important;
+    }
+}
+
+.fotosEspectaculos {
+    height: 150px;
+    width: 215px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.video {
+    display: flex;
+}
+
+.videoAchicado {
+    flex: 1;
+    margin: 10px;
+    height: 240px;
+    width: 450px;
+}
+
+.videoGrande {
+    text-align: center;
+    margin: 10px;
+    height: 500px;
+    width: 815px;
+}
